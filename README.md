@@ -46,7 +46,22 @@ Note: _I have used git-cli commands to commit and update specific files. And als
 9. Check working: terminal > `npm start`
 10. Commit & Push
 
+### Week 3
+
+1. Initialized `https://github.com/VediYD/sit725-2022-t3-prac3`.<br>Repository link: [sit725-2022-t3-prac3](https://github.com/VediYD/sit725-2022-t3-prac3)
+2. Imported code from the previous repository: [sit725-2022-t3-prac2](https://github.com/VediYD/sit725-2022-t3-prac2)
+3. Cloned repository to local system.
+4. Updated `./package.json`.
+5. Moved `./js` to `./public/js` & `./css` to `./public/css`
+6. Made changes as per the prac3 instructions.
+7. Integrated particlejs into the project. In file: `./public/js/particle.js`
+8. Added additional components and made multiple modificiations to the `./public/css/style.css`
+9. Checked working.
+10. Commit & Push
+
 ## Resources Referred
+
+### W2
 
 1. https://docs.npmjs.com/cli/v9/configuring-npm/package-json
 2. https://stackoverflow.com/questions/35995273/how-to-run-html-file-using-node-js
@@ -54,3 +69,18 @@ Note: _I have used git-cli commands to commit and update specific files. And als
 4. https://www.educative.io/answers/how-to-chain-middlewares-in-expressjs
 5. https://masteringjs.io/tutorials/express/express-json
 6. https://stackoverflow.com/questions/9870523/what-are-the-differences-between-application-json-and-application-x-www-form-url
+
+### W3
+
+1. https://in.pinterest.com/pin/861524603694278242/
+2. https://materializecss.com/navbar.html
+3. https://stackoverflow.com/questions/44110568/an-empty-grid-column-in-html-css
+4. https://stackoverflow.com/questions/44325923/how-to-remove-double-scroll-bar
+5. https://stackoverflow.com/questions/46728348/adding-searchbar-in-a-navbar
+6. https://stackoverflow.com/questions/39070028/mysterious-white-space-at-bottom-of-web-page-in-mobile-chrome
+7. https://stackoverflow.com/questions/35552708/is-materialize-navbar-height-adjustment-possible
+8. https://stackoverflow.com/questions/43346795/css-how-to-remove-leftright-border-of-a-row-in-the-table
+9. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
+10. https://stackoverflow.com/questions/51208498/how-to-add-particle-js-as-a-div-background-in-bootstrap
+11. https://stackoverflow.com/questions/6794000/fixed-position-but-relative-to-container
+12. https://stackoverflow.com/questions/32928618/element-hidden-behind-other-elements
