@@ -24,7 +24,7 @@ app.listen(port, () => {
 });
 
 // loading calculator functions
-var calcFunc = require("./js/math");
+var calcFunc = require("./public/js/math");
 
 // defining api endpoints
 app.get("/add", (req, res) => {
