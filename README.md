@@ -64,7 +64,9 @@ Note: _I have used git-cli commands to commit and update specific files. And als
 1. Created new project: [sit725-2022-t3-prac4](https://github.com/VediYD/sit725-2022-t3-prac4). Imported project files from [sit725-2022-t3-prac3](https://github.com/VediYD/sit725-2022-t3-prac3). Cloned repo to local system.
 2. Update `package.json`, `package-lock.json`
 3. Exporting `cardList` from scripts. Importing `cardList` from `scripts.js`. Created `/api/projects` endpoint to return `cardList`.
-4.
+4. Added endpoint `/api/projects` to the `server.js`.
+5. Added function `getProjects` to call the API from `scripts.js`
+6.
 
 ## Resources Referred
 

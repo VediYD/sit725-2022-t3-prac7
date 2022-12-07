@@ -53,17 +53,19 @@ const addCards = (items) => {
   });
 };
 
+const getProjects = () => {
+  $.get("/api/projects", (response) => {
+    if (response.statusCode == 200) {
+      addCards(response.data);
+    }
+  });
+};
+
 $(document).ready(function () {
   $(".materialboxed").materialbox();
-
-  // $("#clickMeButton").click(() => {
-  //   clickMe();
-  // });
-
   $("#formSubmit").click(() => {
     submitForm();
   });
-
-  addCards(cardList.cardList);
+  getProjects();
   $(".modal").modal();
 });
