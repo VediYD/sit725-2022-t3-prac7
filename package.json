@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Main package created for submission towards sit725 task P2.",
   "main": "server.js",
+  "type": "module",
   "scripts": {
     "test": "node server.js",
     "start": "node server.js"
