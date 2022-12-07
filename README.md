@@ -59,6 +59,12 @@ Note: _I have used git-cli commands to commit and update specific files. And als
 9. Checked working.
 10. Commit & Push
 
+### Week 4
+
+1. Created new project: [sit725-2022-t3-prac4](https://github.com/VediYD/sit725-2022-t3-prac4). Imported project files from [sit725-2022-t3-prac3](https://github.com/VediYD/sit725-2022-t3-prac3). Cloned repo to local system.
+2. Update `package.json`, `package-lock.json`
+3.
+
 ## Resources Referred
 
 ### W2
