@@ -64,9 +64,13 @@ Note: _I have used git-cli commands to commit and update specific files. And als
 1. Created new project: [sit725-2022-t3-prac4](https://github.com/VediYD/sit725-2022-t3-prac4). Imported project files from [sit725-2022-t3-prac3](https://github.com/VediYD/sit725-2022-t3-prac3). Cloned repo to local system.
 2. Update `package.json`, `package-lock.json`
 3. Exporting `cardList` from scripts. Importing `cardList` from `scripts.js`. Created `/api/projects` endpoint to return `cardList`.
-4. Added endpoint `/api/projects` to the `server.js`.
+4. Added post request - endpoint `/api/projects` to the `server.js`.
 5. Added function `getProjects` to call the API from `scripts.js`
-6.
+6. Signed Up on `https://account.mongodb.com/account/login`.
+7. Ran command `npm i mongodb --save` & `npm i cors --save`
+8. Created `Cluster0` in MongoDB Atlas. Added code to connect and store information using MongoClient.
+9. Updated `index.html`. Update `scripts.js`.
+10. Update `README.md`
 
 ## Resources Referred
 
