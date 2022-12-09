@@ -5,7 +5,7 @@ import mongodb from "mongodb";
 import path from "path";
 
 // custom module imports
-// NA
+import enc from "./public/js/enc.js";
 
 // describe the port on which the server runs
 var port = process.env.port || 3000;
@@ -36,12 +36,11 @@ app.use(express.json());
 // add capability to parse x-www-form-urlencoded requests > put parsed info to req.body
 app.use(express.urlencoded({ extended: false }));
 
-// OPTIONAL? NEED TO REVISIT
+// simpler security protocols
 app.use(cors());
 
-// connection to mongodb NEED ENCRYPTION
-const uri =
-  "mongodb+srv://VediYD:QKooQUZneynE1TWM@cluster0.qi0uyj8.mongodb.net/?retryWrites=true&w=majority";
+// connection to mongodb
+const uri = enc.dec(enc.sec);
 const client = new mongodb.MongoClient(uri, { useNewUrlParser: true });
 
 // creating collection object
