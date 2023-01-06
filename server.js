@@ -6,6 +6,7 @@ import path from "path";
 
 // custom module imports
 import enc from "./public/js/enc.js";
+import math from "./public/js/math.js";
 
 // describe the port on which the server runs
 var port = process.env.port || 3000;
@@ -96,4 +97,69 @@ app.post("/api/projects", (req, res) => {
       });
     }
   });
+});
+
+// defining api endpoints
+app.get("/add/:num1/:num2", function (req, res, next) {
+  // typecasting received values
+  var num1 = parseInt(req.params.num1);
+  var num2 = parseInt(req.params.num2);
+  var result = math.add(num1, num2) || null;
+  if (result == null) {
+    res
+      .json({ result: result, statusCode: 400, message: "Failure" })
+      .status(400);
+  } else {
+    res
+      .json({ result: result, statusCode: 200, message: "Success" })
+      .status(200);
+  }
+});
+
+app.get("/sub/:num1/:num2", function (req, res, next) {
+  // typecasting received values
+  var num1 = parseInt(req.params.num1);
+  var num2 = parseInt(req.params.num2);
+  var result = math.sub(num1, num2) || null;
+  if (result == null) {
+    res
+      .json({ result: result, statusCode: 400, message: "Failure" })
+      .status(400);
+  } else {
+    res
+      .json({ result: result, statusCode: 200, message: "Success" })
+      .status(200);
+  }
+});
+
+app.get("/mul/:num1/:num2", function (req, res, next) {
+  // typecasting received values
+  var num1 = parseInt(req.params.num1);
+  var num2 = parseInt(req.params.num2);
+  var result = math.mul(num1, num2) || null;
+  if (result == null) {
+    res
+      .json({ result: result, statusCode: 400, message: "Failure" })
+      .status(400);
+  } else {
+    res
+      .json({ result: result, statusCode: 200, message: "Success" })
+      .status(200);
+  }
+});
+
+app.get("/div/:num1/:num2", function (req, res, next) {
+  // typecasting received values
+  var num1 = parseInt(req.params.num1);
+  var num2 = parseInt(req.params.num2);
+  var result = math.div(num1, num2) || null;
+  if (result == null) {
+    res
+      .json({ result: result, statusCode: 400, message: "Failure" })
+      .status(400);
+  } else {
+    res
+      .json({ result: result, statusCode: 200, message: "Success" })
+      .status(200);
+  }
 });
