@@ -72,6 +72,16 @@ Note: _I have used git-cli commands to commit and update specific files. And als
 9. Updated `index.html`. Update `scripts.js`.
 10. Update `README.md`
 
+### Week 5
+
+1. Created new project: [sit725-2022-t3-prac6](https://github.com/VediYD/sit725-2022-t3-prac6). Imported project files from [sit725-2022-t3-prac4](https://github.com/VediYD/sit725-2022-t3-prac4). Cloned repo to local system.
+2. Update `package.json`
+3. Ran `npm install --save mocha chai request`
+4. Added apis to `server.js`
+5. Created directory `test`, added `test.js`.
+6. Added test cases for most of the APIs defined within `server.js`.
+7. Update `README.md`
+
 ## Resources Referred
 
 ### W2
