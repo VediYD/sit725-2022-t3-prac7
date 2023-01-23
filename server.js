@@ -5,13 +5,17 @@ import mongodb from "mongodb";
 import path from "path";
 import { Server } from "socket.io";
 import { createServer } from "http";
+import dotenv from "dotenv";
+
+// loading environment variables from .env file
+dotenv.config();
 
 // custom module imports
 import enc from "./public/js/enc.js";
 import math from "./public/js/math.js";
 
 // describe the port on which the server runs
-var port = process.env.port || 3000;
+var port = process.env.SERVER_PORT;
 
 // intialize express app object
 var app = express();
