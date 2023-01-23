@@ -1,9 +1,3 @@
-import cardList from "./cardList.js";
-
-const clickMe = () => {
-  alert("Click!");
-};
-
 const submitForm = () => {
   let formData = {};
   formData.title = $("#title").val();
@@ -74,6 +68,12 @@ const getProjects = () => {
     }
   });
 };
+
+// socket connection goes here
+let socket = io();
+socket.on("number", (msg) => {
+  console.log(`Random number: ${msg}`);
+});
 
 $(document).ready(function () {
   $(".materialboxed").materialbox();
