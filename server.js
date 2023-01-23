@@ -3,6 +3,8 @@ import express from "express";
 import cors from "cors";
 import mongodb from "mongodb";
 import path from "path";
+import { Server } from "socket.io";
+import { createServer } from "http";
 
 // custom module imports
 import enc from "./public/js/enc.js";
@@ -56,12 +58,6 @@ const createCollection = (collectionName) => {
     }
   });
 };
-
-// listen on designated port
-app.listen(port, () => {
-  console.log("App listening to: " + port);
-  createCollection("Whales");
-});
 
 app.get("/api/projects", (req, res) => {
   getProjects((err, result) => {
@@ -162,4 +158,24 @@ app.get("/div/:num1/:num2", function (req, res, next) {
       .json({ result: result, statusCode: 200, message: "Success" })
       .status(200);
   }
+});
+
+// adding socket code
+let http = createServer(app);
+let io = new Server(http);
+
+io.on("connection", (socket) => {
+  console.log("a user connected");
+  socket.on("disconnect", () => {
+    console.log("the user disconnected");
+  });
+  setInterval(() => {
+    socket.emit("number", parseInt(Math.random() * 10));
+  }, 100);
+});
+
+// listen on designated port
+http.listen(port, () => {
+  console.log("App listening to: " + port);
+  createCollection("Whales");
 });
